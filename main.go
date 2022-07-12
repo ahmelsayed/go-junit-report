@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/jstemmer/go-junit-report/v2/internal/gojunitreport"
-	"github.com/jstemmer/go-junit-report/v2/parser/gotest"
+	"github.com/ahmelsayed/go-junit-report/v2/internal/gojunitreport"
+	"github.com/ahmelsayed/go-junit-report/v2/parser/gotest"
 )
 
 var (

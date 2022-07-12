@@ -219,9 +219,9 @@ func createTestcaseForTest(pkgName string, test gtr.Test) Testcase {
 		}
 	}
 
-	if len(test.Output) > 0 {
-		tc.SystemOut = &Output{Data: formatOutput(test.Output, test.Level)}
-	}
+	// if len(test.Output) > 0 {
+	// 	tc.SystemOut = &Output{Data: formatOutput(test.Output, test.Level)}
+	// }
 
 	return tc
 }

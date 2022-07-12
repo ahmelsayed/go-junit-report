@@ -217,14 +217,12 @@ func createTestcaseForTest(pkgName string, test gtr.Test) Testcase {
 			Message: "Skipped",
 			Data:    formatOutput(test.Output, test.Level),
 		}
-	} else if test.Result == gtr.Unknown {
-		tc.Error = &Result{
-			Message: "No test result found",
-			Data:    formatOutput(test.Output, test.Level),
-		}
-	} else if len(test.Output) > 0 {
+	}
+
+	if len(test.Output) > 0 {
 		tc.SystemOut = &Output{Data: formatOutput(test.Output, test.Level)}
 	}
+
 	return tc
 }
 
